@@ -22,8 +22,9 @@ docker cp [OPTIONS] SRC_PATH|- CONTAINER:DEST_PATH
 #### To run the app
 The application expects two arguments:
 1. The first argument is the target hostname (podname, etc)
+2. Second argument is the portnumber (RMI defaults to port 1099)
 ```
-java RMIPortCheckArgs.java 
+java RMIPortCheckArgs.java <hostname>.<service-name>.<namespace>.svc.cluster.local 1099
 ```
 
 #### To determine the hostname 
